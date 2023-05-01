@@ -1,9 +1,7 @@
-window.onload=function() {
-    canv=document.getElementById("gc");
-    ctx=canv.getContext("2d");
-    document.addEventListener("keydown",keyPush);
-    setInterval(game,50);
-}
+canv=document.getElementById("gc");
+ctx=canv.getContext("2d");
+document.addEventListener("keydown",keyPush);
+setInterval(game,50);
 move1 = 0;
 move2 = 0;
 x = 200;
