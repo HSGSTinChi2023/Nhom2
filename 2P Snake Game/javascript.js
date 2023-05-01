@@ -154,13 +154,17 @@ function game() {
     if(px1 == px2 && py1 == py2){
         if(tail1 > tail2){
             window.alert("green snake won!");
-        }
+            green++;
+	}
         else if(tail1 == tail2){
             window.alert("draw!");
-        }
+       	    green++;
+	    purple++;
+	}
         else {
             window.alert("purple snake won!");
-        }
+            purple++;
+	}
         resetGame();
     }
     ctx.fillStyle="black";
